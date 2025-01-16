@@ -1,0 +1,60 @@
+.super {
+    background: white;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: url(https://media1.giphy.com/media/xUOwGbVQ5OE10yFHGg/200w.gif?cid=6c09b952up6q2epcl7ctfrw5u4cu7vmq5g2fjv9xnzu6iz30&ep=v1_gifs_search&rid=200w.gif&ct=g);
+
+    align-items: center;
+    display: flex;
+    justify-content: center;
+
+    height: 100vh;
+    width: 100vw;
+}
+
+div h1 {
+    color: blue;
+    font-size: 10vw;
+    height: 30vh;
+
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+div h2 {
+    align-items: center;
+    display: flex;
+    font-size: 40px;
+    height: 200px;
+    justify-content: center;
+}
+
+div p {
+    font-size: 50px;
+    font-family: 'Courier New', Courier, monospace;
+    padding: 20px;
+}
+
+div img {
+    height: 20vh;
+    width: 100vw;
+}
+
+.confetti {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+}
+
+div button {
+    height: 10%;
+    width: 20%;
+}
+
