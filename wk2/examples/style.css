@@ -1,0 +1,19 @@
+body {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  background: black;
+  height: 100vh;
+  width: 100vw;
+}
+body h1 {
+  background: #1a73e8;
+  transition-duration: 10s;
+}
+body h1:hover {
+  background: green;
+  padding: 100px;
+}
+body .red {
+  color: red;
+}/*# sourceMappingURL=style.css.map */

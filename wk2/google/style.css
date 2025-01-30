@@ -1,0 +1,173 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+@font-face {
+  font-family: "Google Sans";
+  src: url("google-sans.ttf");
+}
+* {
+  font-family: "Google Sans";
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100vh;
+  overflow: hidden;
+  width: 100vw;
+}
+
+.navbar {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  justify-content: flex-start;
+  background: white;
+  box-shadow: 0px 0px 30px rgba(128, 128, 128, 0.6);
+  height: 7.25%;
+  position: fixed;
+  width: 100vw;
+}
+.navbar .logo {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  font-size: 2vh;
+  height: 40%;
+  margin-left: 100px;
+  margin-right: 100px;
+  width: 20%;
+}
+.navbar a {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  color: #5f6368;
+  cursor: pointer;
+  font-size: 1.75vh;
+  height: 100%;
+  margin-left: 65px;
+  margin-right: 65px;
+}
+.navbar a:hover {
+  color: #202124;
+}
+.navbar button {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  background: #1a73e8;
+  border: 0px;
+  font-size: 1.75vh;
+  border-radius: 20px;
+  height: 70%;
+  width: 30%;
+}
+.navbar .try {
+  background: white;
+  border: 1px solid #5f6368;
+  color: #1a73e8;
+  margin-left: 800px;
+  margin-right: 45px;
+  width: 20%;
+}
+.navbar .sign {
+  color: white;
+  margin-right: 45px;
+  width: 7.5%;
+}
+
+main {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  height: 70vh;
+  width: 100vw;
+}
+main .container {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  height: 40vh;
+  width: 80vw;
+}
+main .container .text {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: flex-start;
+  height: 100%;
+  width: 50%;
+}
+main .container .text img {
+  height: 15%;
+  margin-bottom: 4%;
+  width: 35%;
+}
+main .container .text h1 {
+  color: black;
+  font-size: 6vh;
+  font-weight: 800;
+  height: 40%;
+  line-height: 110%;
+}
+main .container .text p {
+  color: #5f6368;
+  height: 15%;
+  font-size: 2vh;
+  line-height: 150%;
+}
+main .container .text .buttons {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  height: 15%;
+  justify-content: flex-start;
+  margin-top: 5%;
+  width: 100%;
+}
+main .container .text .buttons button {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  background: #1a73e8;
+  border: 0px;
+  font-size: 1.75vh;
+  border-radius: 20px;
+  height: 100%;
+  width: 30%;
+}
+main .container .text .buttons .try {
+  background: white;
+  border: 1px solid #5f6368;
+  color: #1a73e8;
+  margin-right: 45px;
+  width: 50%;
+}
+main .container .text .buttons .sign {
+  color: white;
+  margin-right: 45px;
+  width: 25%;
+}
+main .container img {
+  height: 90%;
+  margin-top: 5%;
+  width: 50%;
+}
+
+.next {
+  font-size: 5vh;
+  position: absolute;
+  left: 50vw;
+  top: 88vh;
+}
+
+.help {
+  aspect-ratio: 1;
+  background: #1a73e8;
+  border-radius: 100%;
+  bottom: 3vh;
+  box-shadow: 0px 10px 20px #5f6368;
+  position: absolute;
+  right: 2.5vw;
+  width: 4.5vw;
+}/*# sourceMappingURL=style.css.map */

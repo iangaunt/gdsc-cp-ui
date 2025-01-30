@@ -1,0 +1,39 @@
+@use "colors";
+// @use "colors" as *;
+
+h2 {
+    // background: $red; <-- Gives us an error
+
+    @include colors.colorful;
+    color: colors.$r;
+    // color: $r;
+}
+
+@mixin flex {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+div {
+    @include flex;
+
+    align-items: flex-start;
+    flex-direction: column;
+    height: 100vh;
+    margin-left: 10vw;
+    width: 80vw;
+}
+
+button {
+    transition: padding 0.5s;
+
+    &:hover {
+        padding: 20px;
+    }
+}

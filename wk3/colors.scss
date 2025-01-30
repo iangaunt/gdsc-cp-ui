@@ -1,0 +1,18 @@
+$r: red;
+$blue: rgb(50, 60, 230);
+$pad: 10px;
+
+$-priv: 777;
+
+@mixin colorful {
+    background: linear-gradient(90deg, red 0%, rgb(55, 128, 0) 50%, $blue 100%);
+    color: green;
+}
+
+h1 {
+    @include colorful;
+
+    color: $blue;
+    padding: $pad;
+    width: 80%;
+}

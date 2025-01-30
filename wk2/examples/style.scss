@@ -1,0 +1,33 @@
+// Mixins allow you to make rulesets without repeating yourself.
+@mixin flex {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+// Variables.
+$blue: #1a73e8;
+
+body {
+    // Applying mixins.
+    @include flex;
+    background: black;
+    height: 100vh;
+    width: 100vw;
+
+    // Any h1s IN the body will be blue.
+    h1 {
+        background: $blue;
+        transition-duration: 10s;
+
+        &:hover {
+            background: green;
+            padding: 100px;
+        }
+    }
+
+    // Anything in h1 with the class red will be red.
+    .red {
+        color: red;
+    }
+}
