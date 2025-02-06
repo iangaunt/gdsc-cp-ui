@@ -1,0 +1,103 @@
+@use 'sass:color';
+
+@font-face {
+    font-family: "Mona Sans";
+    src: url("./MonaSans-Light.woff2");
+}
+
+$blue: rgb(76, 160, 234);
+$green: rgb(150, 222, 118);
+$red: rgb(233, 114, 114);
+
+@mixin flex {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+@keyframes fade {
+    0% {
+        color: $blue;
+    }
+    50% { color: red }
+    100% {
+        color: $green;
+    }
+}
+
+* {
+    font-family: "Mona Sans";
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    @include flex;
+
+    background: linear-gradient(180deg, color.scale(white, $lightness: -5%) 0%, color.scale($blue, $lightness: 80%) 100%);
+    height: 100vh;
+    width: 100vw;
+}
+
+.blues {
+    @include flex;
+
+    flex-direction: column;
+    height: 50vh;
+    width: 50vw;
+
+    h2 {
+        color: black;
+        font-size: 2vw;
+        margin-bottom: 25px;
+    }
+
+    h1 {
+        // animation: 2s ease-in-out infinite alternate fade;
+        color: $blue;
+        font-size: 4vw;
+    }
+
+    .lightest { 
+        color: color.scale(
+            $blue, 
+            $lightness: 35%
+        ); 
+        letter-spacing: 20px; 
+        margin-left: 20px 
+    }
+    
+    .lighter { color: color.scale($blue, $lightness: 15%); letter-spacing: 10px; margin-left: 10px }
+    .darker { color: color.scale($blue, $lightness: -15%); letter-spacing: 10px; margin-left: 10px }
+    .darkest { color: color.scale($blue, $lightness: -35%); letter-spacing: 20px; margin-left: 20px }
+}
+
+button {
+    width: 50%;
+    height: 50px;
+}
+
+.mixes {
+    @include flex;
+
+    flex-direction: column;
+    height: 50vh;
+    width: 50vw;
+
+
+    h1 { font-size: 4vw }
+    .blue { color: $blue }
+    .green { color: $green }
+    .red { color: $red }
+    .bg { color: color.mix($blue, $green) }
+
+    .bgb { color: color.mix(color.mix($blue, $green), $blue) }
+    .bbg { color: color.mix(color.mix($blue, $blue), $green) }
+    .bgg { color: color.mix(color.mix($blue, $green), $green) }
+
+    .gr { color: color.mix($green, $red)}
+    .rg { color: color.mix($red, $green)}
+
+    .rgb { color: color.mix(color.mix($red, $green), $blue) }
+    .rbg { color: color.mix(color.mix($red, $blue), $green) }
+}

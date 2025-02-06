@@ -1,0 +1,117 @@
+@font-face {
+  font-family: "Mona Sans";
+  src: url("./MonaSans-Light.woff2");
+}
+@keyframes fade {
+  0% {
+    color: rgb(76, 160, 234);
+  }
+  50% {
+    color: red;
+  }
+  100% {
+    color: rgb(150, 222, 118);
+  }
+}
+* {
+  font-family: "Mona Sans";
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  background: linear-gradient(180deg, #f2f2f2 0%, #dbecfb 100%);
+  height: 100vh;
+  width: 100vw;
+}
+
+.blues {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: 50vh;
+  width: 50vw;
+}
+.blues h2 {
+  color: black;
+  font-size: 2vw;
+  margin-bottom: 25px;
+}
+.blues h1 {
+  color: rgb(76, 160, 234);
+  font-size: 4vw;
+}
+.blues .lightest {
+  color: #8bc1f1;
+  letter-spacing: 20px;
+  margin-left: 20px;
+}
+.blues .lighter {
+  color: #67aeed;
+  letter-spacing: 10px;
+  margin-left: 10px;
+}
+.blues .darker {
+  color: #228ae5;
+  letter-spacing: 10px;
+  margin-left: 10px;
+}
+.blues .darkest {
+  color: #156ab4;
+  letter-spacing: 20px;
+  margin-left: 20px;
+}
+
+button {
+  width: 50%;
+  height: 50px;
+}
+
+.mixes {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: 50vh;
+  width: 50vw;
+}
+.mixes h1 {
+  font-size: 4vw;
+}
+.mixes .blue {
+  color: rgb(76, 160, 234);
+}
+.mixes .green {
+  color: rgb(150, 222, 118);
+}
+.mixes .red {
+  color: rgb(233, 114, 114);
+}
+.mixes .bg {
+  color: #71bfb0;
+}
+.mixes .bgb {
+  color: #5fb0cd;
+}
+.mixes .bbg {
+  color: #71bfb0;
+}
+.mixes .bgg {
+  color: #84cf93;
+}
+.mixes .gr {
+  color: #c0a874;
+}
+.mixes .rg {
+  color: #c0a874;
+}
+.mixes .rgb {
+  color: #86a4af;
+}
+.mixes .rbg {
+  color: #99b492;
+}/*# sourceMappingURL=style.css.map */
