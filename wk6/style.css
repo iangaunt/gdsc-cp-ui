@@ -1,0 +1,58 @@
+@keyframes flip {
+  0% {
+    transform: rotateZ(0deg);
+  }
+  50% {
+    transform: rotateZ(180deg);
+  }
+  100% {
+    transform: rotateZ(359deg);
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.squares {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+}
+.squares div {
+  aspect-ratio: 1;
+  height: 10vh;
+  margin: 1vh;
+}
+.squares div:nth-of-type(1) {
+  animation: 1s infinite flip;
+  background: rgb(0, 0, 170);
+  height: 5vh;
+}
+.squares div:nth-of-type(2) {
+  animation: 2s infinite flip;
+  background: rgb(0, 0, 140);
+  height: 10vh;
+}
+.squares div:nth-of-type(3) {
+  animation: 3s infinite flip;
+  background: rgb(0, 0, 110);
+  height: 15vh;
+}
+.squares div:nth-of-type(4) {
+  animation: 4s infinite flip;
+  background: rgb(0, 0, 80);
+  height: 20vh;
+}
+.squares div:nth-of-type(5) {
+  animation: 5s infinite flip;
+  background: rgb(0, 0, 50);
+  height: 25vh;
+}
+.squares div:nth-of-type(6) {
+  animation: 6s infinite flip;
+  background: rgb(0, 0, 20);
+  height: 30vh;
+}/*# sourceMappingURL=style.css.map */
