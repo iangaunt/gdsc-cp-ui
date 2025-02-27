@@ -5,9 +5,9 @@
 }
 
 @keyframes flip {
-    0% { transform: rotateZ(0deg); }
-    50% { transform: rotateZ(180deg); }
-    100% { transform: rotateZ(359deg); }
+    0% { transform: rotateZ(0deg); filter: hue-rotate(0deg) }
+    50% { transform: rotateZ(180deg); filter: hue-rotate(360deg) }
+    100% { transform: rotateZ(359deg); filter: hue-rotate(0deg) }
 }
 
 * {
